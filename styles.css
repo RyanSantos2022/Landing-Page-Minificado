@@ -1,0 +1,226 @@
+/*Animações*/
+@keyframes titulo {
+    from {
+        transform: translateX(500px);
+    } 
+        to {
+            transform: translateX(800px);
+        }
+    }
+
+
+@keyframes ondas {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes area-azul {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+/*Header*/
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+@media(min-width: 300px) and (max-width:1000px) {
+    .header .container {
+        display: flex;
+        align-items: center;
+        height: 90px;
+    }
+}
+
+/*Corpo*/
+#titulo {
+    font-family: 'Bellefair', serif;
+    font-weight: 300;
+    color: #22425C;
+    font-size: 6.9rem;
+    text-align: center;
+    margin-top: 100px;
+    height: 79px;
+    animation: titulo 1.5s linear;
+}
+
+@media(min-width:300px) and (max-width: 1000px) {
+    #titulo {
+        font-size: 4.0rem;
+    }
+}
+
+.ondas {
+    margin-top: 122px;
+    width: 100%;
+    animation: ondas 1.5s linear;
+}
+
+@media(min-width:300px) and (max-width: 1000px) {
+    .ondas {
+        margin-top: 80px;
+        width: 100%;
+    }
+}
+
+#area-azul {
+    background-color: #22425C;
+    height: 389px;
+    margin-top: -10px;
+    animation: area-azul 1.5s linear;
+    z-index: 0;
+}
+
+/*Conteudo e Imagens*/
+.resumo__icone {
+    background-color: #ffffff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #CACBCE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.resumo__conteudo {
+    height: 369px;
+    margin-top: -310px;
+    width: 100%;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+
+
+.resumo__texto {
+    background-color: white;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    text-align: left;
+    padding: 75px 25px;
+    padding-bottom: 25px;
+    color: #4B535B;
+    max-width: 533px;
+    border: 1px solid #CACBCE;
+    line-height: 24px;
+}
+
+@media(min-width: 300px) and (max-width: 1000px) {
+    .resumo__texto {
+        line-height: 20px;
+        font-size: 1.4rem;
+    }
+}
+
+.atividades .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.atividades__item {
+    text-align: center;
+    margin-top: 25px;
+    color: #4B535B;
+    font-size: 2.2rem;
+}
+
+@media(min-width: 300px) and (max-width: 1000px) {
+    .atividades__item {
+        font-size: 1.8rem;
+    }
+}
+
+.atividades__img {
+    height: 300px;
+    width: 300px;
+    border-radius: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+@media(min-width: 300px) and (max-width: 1000px) {
+    .atividades__img {
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+    }
+}
+
+.atividades .atividades__item:first-child img {
+    object-position: bottom;
+}
+
+.atividades .atividades__item:last-child img {
+    object-position: left;
+}
+
+.atividades__descricao {
+    color: #4B535B;
+    font-size: 16px;
+    width: 339px;
+    margin-top: 15px;
+}
+
+@media(min-width: 300px) and (max-width: 1000px) {
+    .atividades__descricao {
+        color: #4B535B;
+        font-size: 16px;
+        margin-top: 15px;
+        width: auto;
+        text-align: center;
+    }
+}
+
+.rodape__card {
+    background-color: white;
+    color: #4B535B;
+    font-size: 16px;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0px 3px 6px #00000029;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width: 300px) and (max-width: 1000px) {
+    .rodape {
+        font-size: 1.4rem;
+    }
+}
+
+.rodape__titulo {
+    font-size: 2.2rem;
+}
+
+@media(min-width: 300px) and (max-width: 1000px) {
+    .rodape__titulo {
+        font-size: 1.8rem;
+    }
+}
+
+

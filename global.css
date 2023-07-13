@@ -9,12 +9,12 @@
     --leme-green: #20635D;
     --white: #fff;
 
-
     --fs-400-16: 1.6rem;
     --fs-300-13: 1.3rem;
     --fs-500-16: 1.6rem;
     --fs-400-14: 1.4rem;
     --fs-400-22: 2.2rem;
+    --fs-400-30: 3rem;
     --fs-400-40: 4rem;
 
     --font-family: 'cooperhewitt', sans-serif;
@@ -124,12 +124,6 @@ select {
     justify-content: center;
     align-items: center;
 }
-.botao:hover,
-.botao:focus-visible{
-    transform: translateY(-1rem);
-    transition: transform 100ms;
-}
-
 
 .botao:focus{
     background-color: #E5695B;

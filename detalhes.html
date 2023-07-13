@@ -11,96 +11,274 @@
     <body>
         <header>
             <div class="container">
-                <img src="./img/logo-leme.svg" alt="logo-leme">
-                <p>Atividades</p>
-                <h1>Detalhes</h1>
+                <div class="header">
+                    <img src="./img/logo-leme.svg" alt="logo-leme">
+                    <p class="header_text">Atividades</p>
+                    <h1 class="title">Detalhes</h1>
+                </div>
             </div>
         </header>
 
-        <section class="layout">
-            <div class="container">
-                <div class="grid">
-                    <div>
-                        <h2 class="grid_titulo">Trilha em morretes</h2>
-                        <h3 class="grid__subtitulo">Aventura na Natureza de
-                            Morretes: Trilha Imperdível!</h3>
-                        <ul class="grid__lista">
-                            <li>Natureza exuberante, paisagens deslumbrantes.</li>
-                            <li>Desafie-se em uma trilha emocionante.</li>
-                            <li>Conecte-se com a flora e fauna diversificadas.</li>
-                            <li>Reserve agora e viva essa experiência incrível!</li>
-                        </ul>
-                        <a class="botao" href="#">Inscreva-se!</a>
-                    </div>
-                    <div>
-                        <h2 class="grid_titulo">Mergulho Lagoa Azul</h2>
-                        <h3 class="grid__subtitulo">Explore as Profundezas da
-                            Lagoa Azul: Uma Experiência de Mergulho Única!
-                            Mergulhe nas águas cristalinas da Lagoa Azul.
-                            Descubra uma vida marinha exuberante. Guias
-                            especializados para uma experiência segura. Reserve
-                            seu mergulho agora e encante-se com a Lagoa Azul!</h3>
-                        <ul class="grid__lista">
-                            <li>Mergulhe nas águas cristalinas da Lagoa Azul.</li>
-                            <li>Descubra uma vida marinha exuberante.</li>
-                            <li>Guias especializados para uma experiência
-                                segura.</li>
-                            <li>Reserve seu mergulho agora e encante-se com a
-                                Lagoa Azul!</li>
-                        </ul>
-                        <a class="botao" href="#">Inscreva-se!</a>
-                    </div>
-                    <div>
-                        <h2 class="grid_titulo">Vôlei de Praia</h2>
-                        <h3 class="grid__subtitulo">Divirta-se Sob o Sol: Vôlei
-                            de Praia, o Esporte do Verão!</h3>
-                        <ul class="grid__lista">
-                            <li>Jogue vôlei de praia nas belas praias da região.</li>
-                            <li>Forme equipes, desafie amigos e faça novas
-                                amizades.</li>
-                            <li>Sinta a areia sob seus pés e aproveite a brisa
-                                do mar.</li>
-                            <li>Venha participar e se divertir com o vôlei de
-                                praia!</li>
-                        </ul>
-                        <a class="botao" href="#">Inscreva-se!</a>
-                    </div>
-                    <div>
-                        <h2 class="grid_titulo">Campeonato de Basquete</h2>
-                        <h3 class="grid__subtitulo">Venha Competir no Campeonato de Basquete: Mostre seu Talento nas Quadras!</h3>
-                        <ul class="grid__lista">
-                            <li>Competição emocionante para amantes do basquete.</li>
-                            <li>Desafie-se contra equipes habilidosas.</li>
-                            <li>Categorias para todos os níveis: iniciantes, amadores e profissionais.</li>
-                            <li>nscreva-se agora e mostre suas habilidades no basquete!</li>
-                        </ul>
-                        <a class="botao" href="#">Inscreva-se!</a>
-                    </div>
-                    <div>
-                        <h2 class="grid_titulo">Passeio de Barco Ilha do Mel</h2>
-                        <h3 class="grid__subtitulo">Descubra a Beleza da Ilha do Mel: Passeio de Barco Inesquecível!</h3>
-                        <ul class="grid__lista">
-                            <li>Explore as praias paradisíacas da Ilha do Mel de barco.</li>
-                            <li>Maravilhe-se com paisagens deslumbrantes e formações rochosas.</li>
-                            <li>Aviste golfinhos brincando nas águas cristalinas.</li>
-                            <li>Reserve seu passeio de barco agora e encante-se com a Ilha do Mel!</li>
-                        </ul>
-                        <a class="botao" href="#">Inscreva-se!</a>
-                    </div>
-                    <div>
-                        <h2 class="grid_titulo">Surf em Matinhos</h2>
-                        <h3 class="grid__subtitulo">Deslize nas Ondas de Matinhos: Surf para os Aventureiros!</h3>
-                        <ul class="grid__lista">
-                            <li>Surfe nas ondas perfeitas de Matinhos.</li>
-                            <li>Sinta a adrenalina e a liberdade deslizando sobre o mar.</li>
-                            <li>Praias com condições ideais para todos os níveis de surfistas.</li>
-                            <li>Viva a emoção do surf em Matinhos e aproveite cada momento!</li>
-                        </ul>
-                        <a class="botao" href="#">Inscreva-se!</a>
+        <main>
+            <section class="layout">
+                <div class="container">
+                    <div class="grid">
+                        <div class="grid__area">
+                            <h2 class="grid_titulo">
+                                <span class="grid__titulo--badge badge__green">Trilha
+                                    em morretes</span></h2>
+                            <h3 class="grid__subtitulo">Aventura na Natureza de
+                                Morretes: Trilha Imperdível!</h3>
+                            <ul class="grid__lista">
+                                <li>Natureza exuberante, paisagens
+                                    deslumbrantes.</li>
+                                <li>Desafie-se em uma trilha emocionante.</li>
+                                <li>Conecte-se com a flora e fauna
+                                    diversificadas.</li>
+                                <li>Reserve agora e viva essa experiência
+                                    incrível!</li>
+                            </ul>
+                            <form action="#" class="form">
+                                <div class="form__group">
+                                    <label class="form__label" for="e-mail">Digite
+                                        seu e-mail</label>
+                                    <input class="form__input" type="email"
+                                        id="e-mail"
+                                        placeholder="E-mail">
+                                </div>
+                                <div class="form__group">
+                                    <label class="form__label" for="nome">Digite
+                                        seu
+                                        nome</label>
+                                    <input class="form__input" type="text"
+                                        id="nome"
+                                        placeholder="Nome">
+                                </div>
+                            </form>
+                                <input class="btn__input" type="button"
+                                    value="Enviar">
+
+                            
+                        </div>
+                        <div class="grid__area">
+                            <h2 class="grid_titulo">
+                                <span class="grid__titulo--badge badge__red">Mergulho
+                                    Lagoa Azul</span></h2>
+                            <h3 class="grid__subtitulo"> Uma Experiência de
+                                Mergulho Única!
+                            </h3>
+                            <ul class="grid__lista">
+                                <li>Mergulhe nas águas cristalinas da Lagoa
+                                    Azul.</li>
+                                <li>Descubra uma vida marinha exuberante.</li>
+                                <li>Guias especializados para uma experiência
+                                    segura.</li>
+                                <li>Reserve seu mergulho agora e encante-se com
+                                    a
+                                    Lagoa Azul!</li>
+                            </ul>
+                            <form action="#" class="form">
+                                <div class="form__group">
+                                    <label class="form__label" for="e-mail">Digite
+                                        seu e-mail</label>
+                                    <input class="form__input" type="email"
+                                        id="e-mail"
+                                        placeholder="E-mail">
+                                </div>
+                                <div class="form__group">
+                                    <label class="form__label" for="nome">Digite
+                                        seu
+                                        nome</label>
+                                    <input class="form__input" type="text"
+                                        id="nome"
+                                        placeholder=Nome">
+
+                                </div>
+                            </form>
+                                <input class="btn__input" type="button"
+                                    value="Enviar">
+
+                            
+                        </div>
+                        <div class="grid__area">
+                            <h2 class="grid_titulo">
+                                <span class="grid__titulo--badge badge__blue">Vôlei
+                                    de Praia</span></h2>
+                            <h3 class="grid__subtitulo">Divirta-se Sob o Sol:
+                                Vôlei
+                                de Praia, o Esporte do Verão!</h3>
+                            <ul class="grid__lista">
+                                <li>Jogue vôlei de praia nas belas praias da
+                                    região.</li>
+                                <li>Forme equipes, desafie amigos e faça novas
+                                    amizades.</li>
+                                <li>Sinta a areia sob seus pés e aproveite a
+                                    brisa
+                                    do mar.</li>
+                                <li>Venha participar e se divertir com o vôlei
+                                    de
+                                    praia!</li>
+                            </ul>
+                            <form action="#" class="form">
+                                <div class="form__group">
+                                    <label class="form__label" for="e-mail">Digite
+                                        seu e-mail</label>
+                                    <input class="form__input" type="email"
+                                        id="e-mail"
+                                        placeholder="E-mail">
+                                </div>
+                                <div class="form__group">
+                                    <label class="form__label" for="nome">Digite
+                                        seu
+                                        nome</label>
+                                    <input class="form__input" type="text"
+                                        id="nome"
+                                        placeholder="Nome">
+                                </div>
+                            </form>
+                                <input class="btn__input" type="button"
+                                    value="Enviar">
+                            
+                        </div>
+                        <div class="grid__area">
+                            <h2 class="grid_titulo">
+                                <span class="grid__titulo--badge badge__blue">Campeonato
+                                    de Basquete</span></h2>
+                            <h3 class="grid__subtitulo">Mostre seu Talento nas
+                                Quadras!</h3>
+                            <ul class="grid__lista">
+                                <li>Competição emocionante para amantes do
+                                    basquete.</li>
+                                <li>Desafie-se contra equipes habilidosas.</li>
+                                <li>Categorias para todos os níveis: iniciantes,
+                                    amadores e profissionais.</li>
+                                <li>Inscreva-se agora e mostre suas habilidades
+                                    no
+                                    basquete!</li>
+                            </ul>
+                            <form action="#" class="form">
+                                <div class="form__group">
+                                    <label class="form__label" for="e-mail">Digite
+                                        seu e-mail</label>
+                                    <input class="form__input" type="email"
+                                        id="e-mail"
+                                        placeholder="E-mail">
+                                </div>
+                                <div class="form__group">
+                                    <label class="form__label" for="nome">Digite
+                                        seu
+                                        nome</label>
+                                    <input class="form__input" type="text"
+                                        id="nome"
+                                        placeholder="Nome">
+
+                                </div>
+                            </form>
+                                <input class="btn__input" type="button"
+                                    value="Enviar">
+                            
+                        </div>
+                        <div class="grid__area">
+                            <h2 class="grid_titulo">
+                                <span class="grid__titulo--badge badge__green">Passeio
+                                    de Barco Ilha do Mel</span></h2>
+                            <h3 class="grid__subtitulo">Descubra a Beleza da
+                                Ilha do
+                                Mel: Passeio de Barco Inesquecível!</h3>
+                            <ul class="grid__lista">
+                                <li>Explore as praias paradisíacas da Ilha do
+                                    Mel de
+                                    barco.</li>
+                                <li>Maravilhe-se com paisagens deslumbrantes e
+                                    formações rochosas.</li>
+                                <li>Aviste golfinhos brincando nas águas
+                                    cristalinas.</li>
+                                <li>Reserve seu passeio de barco agora e
+                                    encante-se
+                                    com a Ilha do Mel!</li>
+                            </ul>
+                            <form action="#" class="form">
+                                <div class="form__group">
+                                    <label class="form__label" for="e-mail">Digite
+                                        seu e-mail</label>
+                                    <input class="form__input" type="email"
+                                        id="e-mail"
+                                        placeholder="E-mail">
+                                </div>
+                                <div class="form__group">
+                                    <label class="form__label" for="nome">Digite
+                                        seu
+                                        nome</label>
+                                    <input class="form__input" type="text"
+                                        id="nome"
+                                        placeholder="Nome">
+                                </div>
+                            </form>
+                                <input class="btn__input" type="button"
+                                    value="Enviar">
+                            
+                        </div>
+                        <div class="grid__area">
+                            <h2 class="grid_titulo">
+                                <span class="grid__titulo--badge badge__red">Surf
+                                    em
+                                    Matinhos</span></h2>
+                            <h3 class="grid__subtitulo">Deslize nas Ondas de
+                                Matinhos: Surf para os Aventureiros!</h3>
+                            <ul class="grid__lista">
+                                <li>Surfe nas ondas perfeitas de Matinhos.</li>
+                                <li>Sinta a adrenalina e a liberdade deslizando
+                                    sobre o mar.</li>
+                                <li>Praias com condições ideais para todos os
+                                    níveis
+                                    de surfistas.</li>
+                                <li>Viva a emoção do surf em Matinhos e
+                                    aproveite
+                                    cada momento!</li>
+                            </ul>
+                            <form action="#" class="form">
+                                <div class="form__group">
+                                    <label class="form__label" for="e-mail">Digite
+                                        seu e-mail</label>
+                                    <input class="form__input" type="email"
+                                        id="e-mail"
+                                        placeholder="E-mail">
+                                </div>
+                                <div class="form__group">
+                                    <label class="form__label" for="nome">Digite
+                                        seu
+                                        nome</label>
+                                    <input class="form__input" type="text"
+                                        id="nome"
+                                        placeholder="Nome">
+                                    </div>   
+                                </form> 
+                                    <input class="btn__input" type="button"
+                                        value="Enviar">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
+            <section class="card">
+                <div class="container">
+                    <div class="card__primario">
+                        <p>As atividades ao ar livre são fundamentais para a saúde e o bem-estar, pois oferecem exposição ao sol para produção de vitamina D, conexão com a natureza, variedade de exercícios, estímulo sensorial e combate ao sedentarismo. Praticar atividades ao ar livre promove saúde física e mental, revitaliza o corpo e a mente, e proporciona uma experiência enriquecedora e revigorante.</p>
+                    </div>
+
+                    <div class="card__secundario card__primario">
+                        <h2 class="header_text card__titulo">Deseja ficar por dentro de quando novas oportunidades  e vagas aparecerem?
+                        </h2>
+                        <p class="card__text">Inscreva-se para receber toda vez que novas atividades estiverem disponíveis !</p>
+                        <form class="card__form" action="#">
+                            <div class="card__form__group">
+                                <input class="input__email" type="email"  id="e-mail" placeholder="E-mail">
+                                <input class="btn--card"  type="button" value="Enviar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

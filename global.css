@@ -91,6 +91,14 @@ select {
 
 /*Mini FrameWork*/
 
+.mb-0 {
+    margin-bottom: 0px !important; 
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
 .mb-50{
     margin-bottom: 50px;
 }
@@ -101,7 +109,7 @@ select {
     padding: 0 100px;
 }
 
-@media(min-width: 300px) and (max-width:1000px){
+@media(max-width: 1200px) {
     .container{
 
         max-width: 100%;
